@@ -21,7 +21,7 @@ const Landing: React.FC = () => {
                     <State>Paraná</State>
                 </Location>
 
-                <Enter to="/">
+                <Enter to="/orphanages">
                     <FiArrowRight size={ 26 } color="rgba(0, 0, 0, 0.6"/>
                 </Enter>
             </ContentWrapper>

@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro';
 import { Link } from 'react-router-dom';
-import { Map } from 'react-leaflet';
+import { Map, Popup } from 'react-leaflet';
 
 export const Container = styled.div`
     width: 100vw;
@@ -46,6 +46,40 @@ export const State = styled.p``;
 
 export const MapContainer = styled(Map)`
     z-index: 0;
+`;
+
+export const PopUp = styled(Popup)`
+    .leaflet-popup-content-wrapper {
+        background-color: red;
+        background: rgba(255, 255, 255, .8);
+        border-radius: 20px;
+        box-shadow: none;
+    }
+
+    .leaflet-popup-content {
+        color: var(--color-primary);
+        font-size: 20px;
+        font-weight: bold;
+        margin: 8px 12px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .leaflet-popup-tip-container {
+        display: none;
+    }
+`;
+
+export const AccessOrphanage = styled(Link)`
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-secondary);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 export const Enter = styled(Link)`
